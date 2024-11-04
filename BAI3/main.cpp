@@ -1,14 +1,15 @@
 #include <iostream>
-#include "bai3.cpp"
-
-using namespace std;
+#include "bai3.h"
 
 int main() {
-    ThoiGian tg1(2, 30, 45); // Thời gian 2h 30m 45s
-    ThoiGian tg2(1, 15, 30); // Thời gian 1h 15m 30s
+    ThoiGian tg1, tg2;
 
-    cin>>tg1;
-    cin>>tg2;
+    // Nhập thời gian
+    cout << "Nhap thoi gian thu nhat:\n";
+    cin >> tg1;
+    cout << "Nhap thoi gian thu hai:\n";
+    cin >> tg2;
+
     // Thực hiện các phép toán
     ThoiGian tong = tg1 + tg2;
     ThoiGian hieu = tg1 - tg2;
@@ -16,14 +17,14 @@ int main() {
     cout << "Tong: " << tong << endl;
     cout << "Hieu: " << hieu << endl;
 
-    // Kiểm tra tăng, giảm
+    // Kiểm tra toán tử tăng, giảm
     ++tg1;
     cout << "tg1 sau khi ++: " << tg1 << endl;
 
     --tg2;
     cout << "tg2 sau khi --: " << tg2 << endl;
 
-    // So sánh
+    // So sánh hai thời gian
     if (tg1 > tg2) {
         cout << "tg1 lon hon tg2" << endl;
     } else {
@@ -32,4 +33,3 @@ int main() {
 
     return 0;
 }
-

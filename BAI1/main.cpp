@@ -1,33 +1,32 @@
 #include <iostream>
-#include "bai1.cpp"
+#include "bai1.h"
 
 int main() {
     PhanSo a, b;
 
-    // Nhập hai số phức
-    cout << "Nhap phan so a:\n";
-    cin >> a;
-    cout << "Nhap phan so b:\n";
-    cin >> b;
+    // Input two fractions
+    std::cout << "Nhap phan so a:\n";
+    std::cin >> a;
+    std::cout << "Nhap phan so b:\n";
+    std::cin >> b;
 
-    // Thực hiện phép toán
+    // Perform operations
     PhanSo tong = a + b;
     PhanSo hieu = a - b;
     PhanSo tich = a * b;
     PhanSo thuong = a / b;
 
-    // Xuất kết quả
-    cout << "Tong: " << tong << endl;
-    cout << "Hieu: " << hieu << endl;
-    cout << "Tich: " << tich << endl;
-    cout << "Thuong: " << thuong << endl;
+    // Output results
+    std::cout << "Tong: " << tong << std::endl;
+    std::cout << "Hieu: " << hieu << std::endl;
+    std::cout << "Tich: " << tich << std::endl;
+    std::cout << "Thuong: " << thuong << std::endl;
 
-    //sosanh
-    if(a==b) cout<<"Bang nhau"<<endl;
-    if(a!=b) cout<<"Khac nhau"<<endl;
-    if(a<b) cout<<"Be hon"<<endl;
-    if(a>b) cout<<"Lon hon"<<endl;
+    // Comparison
+    if (a == b) std::cout << "Bang nhau" << std::endl;
+    if (a != b) std::cout << "Khac nhau" << std::endl;
+    if (a < b) std::cout << "Be hon" << std::endl;
+    if (a > b) std::cout << "Lon hon" << std::endl;
 
     return 0;
 }
-
